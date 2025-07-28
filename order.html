@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Order Now - Glamour Nails</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book Your Appointment</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="order.html">Order</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/mnqyzvdk" method="POST">
+      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Email:<br><input type="email" name="email" required></label><br><br>
+      <label>Select Service:<br>
+        <select name="service">
+          <option>Gel Manicure – $30</option>
+          <option>Classic Manicure – $20</option>
+          <option>Acrylic Full Set – $40</option>
+        </select>
+      </label><br><br>
+      <label>Preferred Time:<br><input type="datetime-local" name="time" required></label><br><br>
+      <input type="submit" value="Submit Booking">
+    </form>
+
+    <p>After booking, please complete payment:</p>
+    <a href="https://paypal.me/yourpaypalname/30" target="_blank">
+      <button>Pay $30 with PayPal</button>
+    </a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Glamour Nails. All rights reserved.</p>
+  </footer>
+</body>
+</html>
